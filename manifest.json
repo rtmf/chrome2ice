@@ -1,16 +1,15 @@
 {
 	"manifest_version": 2,
 	"name": "chrome2ice",
-	"version": "0.0.1",
+	"version": "0.0.2",
 
 	"description": "a Chrome plugin to determine the currently playing tab(s) and provide such data in an easily accessible manner for external apps",
 
 	"background": {
 		"persistent": true,
-		"scripts": ["chrome2ice.js"]
+		"scripts": ["settings.js","chrome2ice.js"]
 	},
-
 	"permissions": [
-		"tabs", "http://rfh.tymestl.org/"
+		"tabs", "http://*/"
 	]
 }
