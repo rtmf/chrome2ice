@@ -44,7 +44,8 @@ function setPlaying(text)
 						break;
 				};
 			};
-			xhr.open("GET",mount.url,true,mount.auth.user,mount.auth.pass);
+			xhr.open("GET",mount.url,true);
+			xhr.setRequestHeader("Authorization",window.btoa(mount.auth.user+":"+mount.auth.pass));
 			xhr.send();
 		}
 	);
