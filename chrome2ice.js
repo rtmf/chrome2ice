@@ -17,7 +17,7 @@ function setPlaying(text)
 					url:serverToURL(server)+
 					"admin/metadata?mode=updinfo&mount="+
 					encodeURIComponent(mount)+"&song="+
-					encodeURIComponent(text)
+					encodeURIComponent(server.ad+" | "+text)
 				};
 			})
 	).reduce((urls,mount)=>urls.concat(mount),[]).forEach(
